@@ -1,23 +1,39 @@
 class Pessoa {
     private String nome;
-    private DadosPessoais dados;
+    private DadosPessoais dadosSensiveis;
 
-    public Pessoa(String nome, DadosPessoais dados) {
+    //construtor
+    public Pessoa(String nome, DadosPessoais dadosSensiveis) {
         this.nome = nome;
-        this.dados = dados;
+        this.dadosSensiveis = dadosSensiveis;
+    }
+    public Pessoa(){
+
     }
 
-    public void validaDeIdade() {
-        if (dados.getIdade() >= 18) {
-            System.out.println( nome + " é maior de Idade");
-        } else {
-            System.out.println(nome + " é menor de Idade");
-        }
-    }
+    //metodos
+    public void adicionarPessoa(){
 
+    }
+    public void quantidadePessoas(){
+
+    }
+    public void buscar(){
+
+    }
+    //metodo utilizado para verificar se o usuaruio é maior de idade ou não
+   public void validaDeIdade() {
+       if (dadosSensiveis.getIdade() >= 18) {
+           System.out.println( nome + " é maior de Idade");
+       } else {
+           System.out.println(nome + " é menor de Idade");
+       }
+   }
+
+    //toString
     @Override
     public String toString() {
-        return "Olá " + nome + ", " + dados;
+        return "Olá " + nome + ", " + dadosSensiveis;
 
     }
 }

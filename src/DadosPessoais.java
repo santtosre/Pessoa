@@ -1,40 +1,43 @@
 class DadosPessoais {
     private int idade;
-    private double altura;
-    private int cpf;
+    private double saldo;
+    private String cpf;
 
-    public DadosPessoais(int idade, double altura, int cpf) {
+    //construtor
+    public DadosPessoais(int idade, double saldo, String cpf) {
         this.idade = idade;
-        this.altura = altura;
+        this.saldo = saldo;
         this.cpf = cpf;
     }
 
+    //get and set
     public int getIdade() {return idade;}
 
-    public double getAltura() {
-        return altura;
+    public String getCpf() {
+        return cpf;
     }
 
-    public int getCpf() {
-        return cpf;
+    public double getSaldo() {
+        return saldo;
     }
 
     public void setIdade(int idade) {
         this.idade = idade;
     }
 
-    public void setAltura(double altura) {
-        this.altura = altura;
-    }
-
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    //toString
     @Override
     public String toString() {
-        return "Idade: " + idade + ", " +
-                "Altura: " +  altura + ", " +
-                "Cpf: " +  cpf;
+        return "portador do cpf: " +  cpf +
+                " possui " + idade + " anos de idade, " +
+                "e o saldo atual de: " + saldo + "M";
     }
 }
