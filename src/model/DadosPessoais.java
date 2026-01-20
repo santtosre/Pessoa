@@ -1,4 +1,6 @@
-class DadosPessoais {
+package model;
+
+public class DadosPessoais {
     private int idade;
     private double saldo;
     private String cpf;

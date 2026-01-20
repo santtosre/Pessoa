@@ -1,17 +1,22 @@
+import model.DadosPessoais;
+import model.Pessoa;
+import service.PessoaService;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
-        //criação dos objetos DadosPessoais
+        /*
+        //criação dos objetos model.DadosPessoais
         DadosPessoais dados = new DadosPessoais(22,17.000,"00000000000");
         DadosPessoais dados1 = new DadosPessoais(7,50.000,"057633758657");
         DadosPessoais dados2 = new DadosPessoais(15,40.000,"027587337");
         DadosPessoais dados3 = new DadosPessoais(27,300.000,"43572876697");
         DadosPessoais dados4 = new DadosPessoais(33,100.000,"09730722767");
 
-        //criação dos objetos Pessoa
+        //criação dos objetos model.Pessoa
         Pessoa pessoa = new Pessoa("Macelo", dados);
         Pessoa pessoa1 = new Pessoa("Lilian", dados1);
         Pessoa pessoa2 = new Pessoa("Julio", dados2);
@@ -50,10 +55,7 @@ public class Main {
         listaPessoas.clear();
         System.out.println("a lista possui " + listaPessoas.size() + " adicionados");
 
-
-
-
-
+         */
 
 
         }
