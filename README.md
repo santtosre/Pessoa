@@ -1,6 +1,24 @@
+Projeto em Java com o objetivo de praticar:
 
-O projeto foi desenvolvido utilizando orientação a objetos e composição entre classes.
-A classe Pessoa que compoe a DadosPessoais, possui uma validação para vê se objeto criado
-possui idade > ou < que 18 anos. 
+- Programação Orientada a Objetos (POO)
+- Composição (Pessoa possui DadosPessoais)
+- Separação de responsabilidades
+- Uso de exceções customizadas
+- Lógica de negócio
+
+## Funcionalidades
+
+- Cadastro de pessoas em uma lista
+- Validação de CPF (tamanho)
+- Verificação de maioridade
+- Exibição dos dados cadastrados
+
+## Estrutura do Projeto
+
+- model → entidades do sistema
+- service → regras de negócio
+- excessao → exceções personalizadas
+- Main → ponto de entrada da aplicação
+
 
 
