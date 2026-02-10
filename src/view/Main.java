@@ -8,12 +8,12 @@ import model.DadosPessoais;
 public class Main {
     public static void main(String[] args) {
 
-        //criação dos objetos model.DadosPessoais
+        //criação dos objetos DadosPessoais
         DadosPessoais dados = new DadosPessoais(22,17.000,"45097173850");
-        DadosPessoais dados2 = new DadosPessoais(32,30.000,"10293020301");
+        DadosPessoais dados2 = new DadosPessoais(13,30.000,"12231234218");
 
 
-        //criação dos objetos model.Pessoa
+        //criação dos objetos Pessoa
         Pessoa pessoa = new Pessoa("Macelo", dados);
         Pessoa pessoa2 = new Pessoa("Fernando", dados2);
 
@@ -24,12 +24,14 @@ public class Main {
             gerenciar.adicionarPessoa(pessoa);
             gerenciar.adicionarPessoa(pessoa2);
         }catch (CpfInvalidoException e){
-            System.out.println("CPF Invalido");
+            System.out.println(e.getMessage());
         }
 
-        System.out.println(gerenciar.tamanhoLista());
         System.out.println(gerenciar);
+        pessoa.validaDeIdade();
+        pessoa2.validaDeIdade();
 
+        System.out.println("A lista possui: " +gerenciar.tamanhoLista() + " Cadastros");
 
         }
     }

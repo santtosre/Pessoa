@@ -38,8 +38,7 @@ public class DadosPessoais {
     //toString
     @Override
     public String toString() {
-        return "portador do cpf: " +  cpf +
-                " possui " + idade + " anos de idade, " +
-                "e o saldo atual de: " + saldo + "M";
+        return "CPF: " +  cpf +
+                " / " + idade + " Anos ";
     }
 }
